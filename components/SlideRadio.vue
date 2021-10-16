@@ -4,7 +4,7 @@
       <b-radio
         :value="rangeInput"
         :native-value="code"
-        type="is-primary"
+        type="is-danger"
         @input="setRangeInput()"
       />
     </b-field>
@@ -20,6 +20,7 @@
         :max="max"
         :min="min"
         :step="step"
+        type="is-danger"
         indicator
         lazy
         @change="passValue($event)"

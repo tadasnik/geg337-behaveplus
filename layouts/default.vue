@@ -10,7 +10,7 @@
           class="navbar-item"
           href="/"
         >
-          UKFDRS/BehavePlus
+          GEG337/BehavePlus/exercise
         </a>
 
         <div class="navbar-burger">

@@ -53,7 +53,7 @@ export const nodeProps = {
       label: 'Crown fire spread rate',
       units: 'm/min',
       decimals: 2,
-      description: "Active crown fire rate of spread is the head fire (forward) spread rate of a crown fire estimated using Rothermel's (1991) crown fire spread model. It is the overall spread for a sustained run over several hours and implicitly includes the effects of spotting. It does not consider a description of the overstory. The active crown fire rate of spread is calculated from 20-foot wind speed and surface fuel moisture values."
+      description: "Active crown fire rate of spread is the head fire (forward) spread rate of a crown fire estimated using Rothermel's (1991) crown fire spread model. It is the overall spread for a sustained run over several hours and implicitly includes the effects of spotting. It does not consider a description of the overstory. The active crown fire rate of spread is calculated from 10 metre wind speed and surface fuel moisture values."
     },
     crownFireFlameLength: {
       group: 'crown',
@@ -76,7 +76,7 @@ export const nodeProps = {
 
     activeRatio: {
       group: 'crown',
-      selected: true,
+      selected: false,
       geneLabel: 'crown.fire.initiation.activeRatio',
       label: 'Active crown fire ratio',
       units: 'ratio',

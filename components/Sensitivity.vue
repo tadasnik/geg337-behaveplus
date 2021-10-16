@@ -1,5 +1,8 @@
 <template>
   <section>
+    <h4 class="title is-4">
+      BehavePlus outputs
+    </h4>
     <b-field label="Select model output (Y axis)">
       <b-select
         placeholder="Select output variable"
@@ -51,7 +54,7 @@
         </div>
       </b-modal>
       <p class="control">
-        <b-button type="is-primary" label="" icon-right="mdi mdi-help-circle-outline" @click="isCardModalActive = true" />
+        <b-button type="is-warning" label="" icon-right="mdi mdi-help-circle-outline" @click="isCardModalActive = true" />
       </p>
     </b-field>
     <box-high
@@ -179,7 +182,7 @@ export default {
       const optionsText = []
       Object.keys(this.outputNodes).forEach((key) => {
         const outNode = this.outputNodes[key]
-        if (outNode.group === filterString) {
+        if (outNode.group === filterString && outNode.selected) {
           const dispString = this.outputNodes[key].label
           optionsText.push([key, dispString])
         }

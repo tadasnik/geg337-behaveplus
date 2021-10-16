@@ -1,10 +1,12 @@
 <template>
-  <div style="position: absolute width: 100%">
-    <highchart
-      :more="true"
-      :options="chartOptions"
-      :update="watchers"
-    />
+  <div>
+    <client-only>
+      <highchart
+        :more="true"
+        :options="chartOptions"
+        :update="watchers"
+      />
+    </client-only>
   </div>
 </template>
 
@@ -96,7 +98,6 @@ export default {
       return {
         chart: {
           type: 'boxplot',
-          height: (3 / 4 * 100) + '%',
           redraw: true,
           animation: true,
           zoomType: 'xy',
@@ -108,6 +109,8 @@ export default {
         },
 
         series: [{
+          color: '#003049',
+          fillColor: '#FCBF49',
           name: this.yLabel,
           data: this.data
         }],
@@ -122,8 +125,7 @@ export default {
         yAxis: {
           title: {
             text: this.ylabel
-          },
-          plotLines: this.getPlotlines
+          }
         },
         legend: {
           enabled: false
