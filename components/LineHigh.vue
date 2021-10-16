@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position: absolute width: 100%">
     <highchart
       :options="chartOptions"
       :update="watchers"
@@ -35,6 +35,7 @@ export default {
       return {
         chart: {
           type: 'line',
+          height: (3 / 4 * 100) + '%',
           redraw: true,
           animation: true,
           zoomType: 'xy',

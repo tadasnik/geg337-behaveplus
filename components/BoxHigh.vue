@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="position: absolute width: 100%">
     <highchart
       :more="true"
       :options="chartOptions"
@@ -96,6 +96,7 @@ export default {
       return {
         chart: {
           type: 'boxplot',
+          height: (3 / 4 * 100) + '%',
           redraw: true,
           animation: true,
           zoomType: 'xy',
