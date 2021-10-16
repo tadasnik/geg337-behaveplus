@@ -3,6 +3,7 @@
     <h4 class="title is-4">
       BehavePlus inputs
     </h4>
+
     <div class="block">
       <slide-radio
         v-for="{ label, units, code, max, min, step, description } in getInputNodes"
@@ -21,6 +22,9 @@
         @changeInput="resetRangeInput(code, $event)"
       />
     </div>
+    <b-button class="is-warning" @click="resetInputs()">
+      Reset default values
+    </b-button>
   </section>
 </template>
 
@@ -70,6 +74,15 @@ export default {
   },
 
   methods: {
+
+    resetInputs () {
+      Object.keys(this.nodeProps).forEach((key) => {
+        const defVal = this.nodeProps[key].defValue
+        this.updateSiteInput(key, defVal)
+      })
+      this.setRangeInput(this.rangeInput)
+      this.$emit('change')
+    },
 
     resetRangeInput (code) {
       // update previous rangeInput value to single value

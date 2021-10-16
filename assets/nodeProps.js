@@ -20,9 +20,19 @@ export const nodeProps = {
       description: 'Surface fire flame length of a spreading surface fire within the flaming front is measured from midway in the active flaming combustion zone to the average tip of the flames. According to Rothermel (1991), "Flame length is an elusive parameter that exists in the eye of the beholder. It is a poor quantity to use in a scientific or engineering sense, but it is so readily apparent to fireline personnel and so readily conveys a sense of fire intensity that it is worth featuring as a primary fire variable."\nBoth surface fireline intensity and surface fire flame length are related to the heat felt by a person standing next to the flames. Flame length is calculated from fireline intensity, which is a function of surface fire rate of spread and heat per unit area.'
     },
 
+    heatPerUnitArea: {
+      group: 'primary',
+      selected: true,
+      geneLabel: 'surface.weighted.fire.heatPerUnitArea',
+      label: 'Heat per unit area',
+      units: 'J/m2',
+      decimals: 0,
+      description: 'Surface fire flame length of a spreading surface fire within the flaming front is measured from midway in the active flaming combustion zone to the average tip of the flames. According to Rothermel (1991), "Flame length is an elusive parameter that exists in the eye of the beholder. It is a poor quantity to use in a scientific or engineering sense, but it is so readily apparent to fireline personnel and so readily conveys a sense of fire intensity that it is worth featuring as a primary fire variable."\nBoth surface fireline intensity and surface fire flame length are related to the heat felt by a person standing next to the flames. Flame length is calculated from fireline intensity, which is a function of surface fire rate of spread and heat per unit area.'
+    },
+
     fireFirelineIntensity: {
       group: 'primary',
-      selected: false,
+      selected: true,
       geneLabel: 'surface.weighted.fire.firelineIntensity',
       label: 'Fireline intensity',
       units: 'J/m/s',

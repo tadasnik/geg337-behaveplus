@@ -17,10 +17,10 @@ export const exFuels = {
     liveStemSavr: 1600,
     deadHeat: 8000,
     liveHeat: 8000,
-    photo: 'https://drive.google.com/uc?id=1RU8sB0Zb2VWPFlexd-mxwKkWjkDObkdT',
+    photo: 'https://drive.google.com/uc?id=1rvRrUjHmynN_HSGCjZ4N3AzE4QbQjrM-',
     // thumbnail: 'https://drive.google.com/thumbnail?id=1RU8sB0Zb2VWPFlexd-mxwKkWjkDObkdT'
     description: 'Moderate load conifer litter consisting of needles, twigs and light load of coarse fuels',
-    thumbnail: 'thumbnail_heather.jpeg'
+    thumbnail: 'thumbnail_conifer.jpeg'
   },
 
   sh6: {
@@ -42,11 +42,11 @@ export const exFuels = {
     liveStemSavr: 1600,
     deadHeat: 8000,
     liveHeat: 8000,
-    photo: 'https://drive.google.com/uc?id=1RU8sB0Zb2VWPFlexd-mxwKkWjkDObkdT',
+    photo: 'https://drive.google.com/uc?id=1NOmD6Lk5Vj8O0zCASnBERYNis48Y1zCq',
     // thumbnail: 'https://drive.google.com/thumbnail?id=1RU8sB0Zb2VWPFlexd-mxwKkWjkDObkdT'
 
     description: 'Primary carrier of fire in sh6 is woody shrubs and shrub litter. Dense, moderatelly tall (0.6m) shrub, no coarse fuels, little or no harbaceous fuel. Characteristic species in UK heather',
-    thumbnail: 'thumbnail_heather.jpeg'
+    thumbnail: 'thumbnail_heather_low.jpeg'
   },
   sh8: {
     domain: 'behave',
@@ -116,9 +116,9 @@ export const exFuels = {
     liveStemSavr: 1500,
     deadHeat: 9000,
     liveHeat: 9000,
-    photo: 'https://drive.google.com/uc?id=1-PfA0oCl0YjQCRWefFHRyjwA2B129YW1',
+    photo: 'https://drive.google.com/uc?id=1Ok0CFXFy8RncHSgSRXJ8oYpyRF-xTZ4c',
     description: 'Continious, coarse, humid-climate grass. Grass and herb fuel load is greater than sh3, fuel bed depth up to about 1 metre. Shrubs are not present in significant quantity to affect fire behaviour. Characteristic vegetation purple moor grass, large amounts of dead herbaceous material from previous seasons.',
     // thumbnail: 'https://drive.google.com/thumbnail?id=1-PfA0oCl0YjQCRWefFHRyjwA2B129YW1'
-    thumbnail: 'thumbnail_molinia.jpeg'
+    thumbnail: 'thumbnail_grass_2.jpeg'
   }
 }

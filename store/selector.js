@@ -108,6 +108,7 @@ export const actions = {
   },
 
   initSiteInputs: ({ commit }, payload) => {
+    console.log('store init inputs')
     commit('INIT_SITE_INPUTS', payload)
   },
 
