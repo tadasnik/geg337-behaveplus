@@ -27,7 +27,7 @@ export const nodeProps = {
       label: 'Heat per unit area',
       units: 'J/m2',
       decimals: 0,
-      description: 'Surface fire flame length of a spreading surface fire within the flaming front is measured from midway in the active flaming combustion zone to the average tip of the flames. According to Rothermel (1991), "Flame length is an elusive parameter that exists in the eye of the beholder. It is a poor quantity to use in a scientific or engineering sense, but it is so readily apparent to fireline personnel and so readily conveys a sense of fire intensity that it is worth featuring as a primary fire variable."\nBoth surface fireline intensity and surface fire flame length are related to the heat felt by a person standing next to the flames. Flame length is calculated from fireline intensity, which is a function of surface fire rate of spread and heat per unit area.'
+      description: "Surface fire heat per unit area is the heat energy release per area (square foot or square meter) within the flaming front of the surface fuel. It is not affected by wind, slope, or direction of spread. Surface fire heat per unit area is calculated in Rothermel's (1972) surface fire spread model and is based only on the fine fuels that are assumed to affect fire spread. Additional energy is released in the burnout phase of combustion, but that heat is not considered in this calculation. Therefore, care should be exercised when using surface fire heat per unit area to predict fire effects."
     },
 
     fireFirelineIntensity: {
